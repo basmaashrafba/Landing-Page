@@ -1,100 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Manipulating the DOM</title>
-    <!-- Load Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Load Styles -->
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- HTML Follows BEM naming conventions 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet" />
+  <!-- Load Styles -->
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
-    <header class="page__header">
-      <nav class="navbar__menu">
-        <!-- Navigation starts as empty UL that will be populated with JS -->
-        <ul id="navbar__list"></ul>
-      </nav>
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Apply Now</h1>
     </header>
-    <main>
-      <header class="main__hero">
-        <h1>Apply Now</h1>
-      </header>
-      <!-- Each Section has an ID (used for the anchor) and 
+    <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
     Adding more sections will automatically populate nav.
     The first section is set to active class by default -->
 
-      <section id="About" data-nav="About" class="your-active-class">
-        <div class="landing__container">
-          <h2>About</h2>
-          <p>Some text about who we are and what we do.</p>
-        </div>
-      </section>
+    <section id="About" data-nav="About" class="your-active-class">
+      <div class="landing__container">
+        <h2>About</h2>
+        <p>Some text about who we are and what we do.</p>
+      </div>
+    </section>
 
-      <section id="Why" data-nav="Why">
-        <div class="landing__container">
-          <h2>Why Us!</h2>
-          <p>
-            you ask yourself now why us, not another company here is the
-            benefits of our company
+    <section id="Why" data-nav="Why">
+      <div class="landing__container">
+        <h2>Why Us!</h2>
+        <p>
+          you ask yourself now why us, not another company here is the
+          benefits of our company
 
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </p>
-        </div>
-      </section>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </p>
+      </div>
+    </section>
 
-      <section id="Register" data-nav="Register">
-        <div class="landing__container">
-          <h2>Register</h2>
-          <p></p>
-          <hr />
-          <label for="email"><b>Email</b></label>
-          <input
-            type="text"
-            placeholder="Enter Email"
-            name="email"
-            id="email"
-            required
-          />
+    <section id="Register" data-nav="Register">
+      <div class="landing__container">
+        <h2>Register</h2>
+        <p></p>
+        <hr />
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required />
 
-          <label for="psw"><b>Password</b></label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="pass"
-            id="psw"
-            required
-          />
-          <button type="submit" class="register">Register</button>
-        </div>
-      </section>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pass" id="psw" required />
+        <button type="submit" class="register">Register</button>
+      </div>
+    </section>
 
-      <section id="Contact" data-nav="Contact">
-        <div class="landing__container">
-          <h2>Contact With Us Now</h2>
-          <a href="https://www.facebook.com/">
-            <img src="FB.png" />
-          </a>
-          <a href="https://www.instagram.com/">
-            <img src="Instagram.png" />
-          </a>
-        </div>
-      </section>
-    </main>
-    <footer class="page__footer">
-      <p>&copy Udacity</p>
-    </footer>
-  <script src="js/app.js"></script>
-  
-  </body>
+    <section id="Contact" data-nav="Contact">
+      <div class="landing__container">
+        <h2>Contact With Us Now</h2>
+        <a href="https://www.facebook.com/">
+          <img src="FB.png" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="Instagram.png" />
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="app.js"></script>
+
+</body>
+
 </html>
