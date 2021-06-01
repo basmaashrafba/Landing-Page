@@ -41,7 +41,7 @@ const createNavList = (() => {
 })();
 
 function myFunction() {
-  var menu = document.getElementById("navbar__list");
+  let menu = document.getElementById("navbar__list");
   if (menu.style.display === "block") {
     menu.style.display = "none";
   } else {
